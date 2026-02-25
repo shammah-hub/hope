@@ -14,8 +14,8 @@ export default function Footer() {
 
   const footerLinks = {
     organization: [
-      { name: 'Our Story', href: '/about-us' },
-      { name: 'Leadership Team', href: '/about-us#leadership' },
+      { name: 'Our Story', href: '/our-story' },
+      { name: 'Leadership Team', href: '/leadership' },
       { name: 'Careers', href: '/careers' },
       { name: 'Press & Media', href: '/media-kit' },
     ],
@@ -103,7 +103,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-[#1A5744] pt-8 text-center text-xs font-light">
-          <p>© 2026 VITAL/26. All rights reserved.</p>
+          <p>© 2026 Hope. All rights reserved.</p>
         </div>
       </div>
     </footer>
