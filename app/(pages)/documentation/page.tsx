@@ -314,7 +314,7 @@ export default function DocumentationPage() {
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               {[
-                { icon: '📧', title: 'Email Support', desc: 'Get help via email within 24-48 hours for setup and customization questions.' },
+                { icon: '📧', title: 'Email Support', desc: 'Get help at shammahmaida.sm@gmail.com within 24-48 hours for setup and customization questions.' },
                 { icon: '📄', title: 'License', desc: 'Single license for one project. Extended license available for multiple projects.' },
                 { icon: '🔄', title: 'Updates', desc: 'Free updates for 6 months after purchase. Bug fixes are always free.' },
                 { icon: '🎁', title: "What's Included", desc: 'Full source code, documentation, component library, and free minor updates.' },
