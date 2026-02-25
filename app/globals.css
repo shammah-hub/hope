@@ -23,4 +23,36 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* prevent horizontal scroll on all pages */
+}
+
+/* Dashboard layout */
+.dashboard-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  z-index: 40;
+}
+
+.dashboard-content {
+  min-height: 100vh;
+  min-width: 0; /* prevent flex overflow */
+  display: flex;
+  flex-direction: column;
+
+  /* Mobile: no sidebar offset, but account for top bar + bottom tab bar */
+  margin-left: 0;
+  padding-top: 56px;   /* matches the h-14 mobile top bar */
+  padding-bottom: 64px; /* matches the mobile bottom tab bar */
+}
+
+/* Desktop: restore sidebar offset, remove mobile chrome padding */
+@media (min-width: 1024px) {
+  .dashboard-content {
+    margin-left: 256px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
